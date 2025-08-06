@@ -9,3 +9,6 @@ import keyword
 # Display all keywords in Python
 print(keyword.kwlist)
  
+print("the length of keyword list is::",len(keyword.kwlist))
+
+"the len keyword is used to find the count of the list"
