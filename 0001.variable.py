@@ -17,13 +17,14 @@ my_name="vimal"
 age=35
 my_age=36
 
+# better way to declare variable name
+my_name = "vimal"
+my_age = 36 # my_name and my_age are variable names
+s 
+
+
 print(my_age)
 print(my_name)
 print(age)
 print(type(my_name))
 print(type(age))
-
-# better way to declare variable name
-my_name = "vimal"
-my_age = 36 # my_name and my_age are variable names
-print(my_name)  
