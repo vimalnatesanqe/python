@@ -20,7 +20,7 @@ my_age=36
 # better way to declare variable name
 my_name = "vimal"
 my_age = 36 # my_name and my_age are variable names
-s 
+ 
 
 
 print(my_age)
@@ -28,3 +28,22 @@ print(my_name)
 print(age)
 print(type(my_name))
 print(type(age))
+
+
+
+# multiple assignment in single line
+x,y,z=1,2,"Vimal"
+print(x)
+print(y)
+print(z)
+
+#single value asign to multiple variable
+x=y=z=0
+print(x)
+print(y)
+print(z)
+
+x=(1,2,3,4)
+x,z,*y=(1,2,3,4)
+print(x)
+print(y)
