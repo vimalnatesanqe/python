@@ -29,8 +29,8 @@ print(float(True))
 #bool type cast applicable for all data type
 
 int
-print(bool(10))
-print(bool(0))
+print(bool(10)) --true none and zero values
+print(bool(0))  --False with zero and none values
 float
 print(bool(10.0))
 print(bool(0.0))
