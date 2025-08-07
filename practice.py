@@ -35,3 +35,35 @@ print(sentence.find("is"))       # 7 (returns -1 if not found)
 print(sentence.rfind("p"))       # 10 (last occurrence)
 print(sentence.index("is"))      # 7 (raises ValueError if not found)
 print(sentence.rindex("p")) 
+
+
+text = "banana"
+
+print(text.count("a"))          # 3
+print(text.count("na"))         # 2
+print(text.replace("a", "o"))   # "bonono"
+print(text.replace("na", "xy")) # "baxyxa"
+
+
+#split()
+#strip()
+#upper()
+#is
+#center()
+#count
+#replcae
+#find
+#index
+
+
+print("vimal".find('l'))
+print("vimal".replace('l','ll').replace('v','KK'))
+
+x="pal-lap"
+y=x.replace('-','')
+z=y[::-1]
+print(z)
+if y==z:
+    print("This is a palindrome")
+else:
+    print("This is not palindrome")
