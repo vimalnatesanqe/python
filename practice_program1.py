@@ -46,4 +46,16 @@ elif user_oppinon=='div':
 else:
     print("please choose correct input values")
 
-           
+user_sal=int(input("enter your salary:: ").strip())
+user_gender=input("enter your gender:: ")
+if user_sal<15000:
+    bonus=user_sal*3/100
+    print(f"your diwali salary is {user_sal+bonus}")
+elif user_gender=='male':
+    bonus=user_sal*5/100
+    print(f"your diwali salary is {user_sal+bonus}")
+else:
+    bonus=user_sal*10/100
+    print(f"your diwali salary is {user_sal+bonus}")
+
+
