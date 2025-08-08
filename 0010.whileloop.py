@@ -44,7 +44,6 @@ else:
 
 #nested while loop
 
-
 a=1
 while a<=10:
     b=1
