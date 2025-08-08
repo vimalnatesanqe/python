@@ -153,3 +153,17 @@ list_copy=e1_list.copy()
 e1_list[0][0]=100
 print(e1_list)
 print(list_copy)
+
+#get list input from user
+
+user_input=eval(input("enter your value"))
+
+lucky_nbr=[1,2,3,4]
+while True:
+    for i,j in zip(user_input,lucky_nbr):
+        if i==j:
+            print("you entered lucky nbr")
+            break
+        else:
+            ("you are not entered lucky nbr")
+            user_input=eval(input("enter your value"))
