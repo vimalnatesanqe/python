@@ -109,4 +109,47 @@ print(temp_list)
 
 del temp_list #temp list will be delete
 
-print(temp_list)
+#copy vs shallow copy #deep copy
+
+e_list=[1,2,3,4,5]
+a_c_list=e_list
+
+# print(id(e_list))
+# print(id(a_c_list))
+s_c_list=e_list.copy()
+# print(id(s_c_list))
+# print(id(e_list[0]))
+# print(id(s_c_list[0]))
+# e_list.append(10)
+# print(e_list)
+# print(s_c_list)
+# s_c_list.append(20)
+# print(e_list)
+# print(s_c_list)
+# e_list[0]=1000
+# print(e_list)
+# print(s_c_list)
+
+import copy
+e1_list=[[1,2,3],[4,5,6],[7,8,9]]
+
+x=copy.copy(e1_list)
+print(id(e1_list))
+print(id(x))
+print(id(e1_list[0][1]))
+print(id(x[0][1]))
+e1_list[0][1]=1000
+print(e1_list)
+print(x)
+d_c_list=copy.deepcopy(e1_list)
+print(id(e1_list[0][0]))
+print(id(d_c_list[0][0]))
+e1_list[0][0]=100000
+print(e1_list)
+print(d_c_list)
+
+e1_list=[[1,2,3],[4,5,6],[7,8,9]]
+list_copy=e1_list.copy()
+e1_list[0][0]=100
+print(e1_list)
+print(list_copy)
