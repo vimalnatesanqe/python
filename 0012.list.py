@@ -156,14 +156,48 @@ print(list_copy)
 
 #get list input from user
 
-user_input=eval(input("enter your value"))
+#user_input=eval(input("enter your value"))
 
-lucky_nbr=[1,2,3,4]
-while True:
-    for i,j in zip(user_input,lucky_nbr):
-        if i==j:
-            print("you entered lucky nbr")
-            break
-        else:
-            ("you are not entered lucky nbr")
-            user_input=eval(input("enter your value"))
+# lucky_nbr=[1,2,3,4]
+# while True:
+#     for i,j in zip(user_input,lucky_nbr):
+#         if i==j:
+#             print("you entered lucky nbr")
+#             break
+#         else:
+#             ("you are not entered lucky nbr")
+#             user_input=eval(input("enter your value"))
+
+
+####################################
+#LIST COMPREHENSION
+####################################
+
+#list comprehension basically used for create list from iterable object (like)
+#list,tuple,range,dict
+#this is short hand efficient way to create
+
+## create list from range
+
+comp_list=[i for i in range(10)]
+print(comp_list)
+#checking condition only if
+comp_list=[i for i in range(10) if i%2==0]
+print(comp_list)
+#checking condition if else
+comp_list=[i if i%2==0 else "vimal" for i in range(10)]
+print(comp_list)
+
+## creating list from list:
+
+a=[1,2,3,4,5,6,7,8,9]
+comp_list=[i for i in a if i%2==0]
+print(comp_list)
+comp_list=[i if i<5 else a[0] for i in a]
+print(comp_list)
+
+#create list from tuple
+
+t=(1,2,3,4,5,6,)
+comp_list=[i for i in t]
+print(comp_list)
