@@ -45,3 +45,5 @@ for index,values in enumerate(mixed_tuple):
 #tuple functions
 print(len(mixed_tuple))
 print(mixed_tuple[2].count(2))
+
+
