@@ -53,7 +53,7 @@ name="vimalathithan"
 def glob_fun():
     name="ram"
     print(name)
-    print(globals().get(name))
+    print(globals().get('name'))
 
 glob_fun()
 

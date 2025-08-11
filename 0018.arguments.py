@@ -63,7 +63,6 @@ def key_var_length_arg(**var):
 
 key_var_length_arg(one=1,two=2,three=3,four=4)
 
-
 print(pos_arg(1,2,3))
 print(default_arg(1,2))
 print(keyword_arg(a=10,b=30,c=100))
