@@ -64,5 +64,19 @@ print(my_dict)
 my_dict.clear()
 print(my_dict)
 
-del my_dict
-print(my_dict)
+
+
+## dict comprehension
+
+#comrehension by range
+
+range_dict={ i:i*2 for i in range(1,10)}
+print(range_dict)
+
+#comprehenson by str
+
+name="viamalathithan natesan sellai namakkal"
+
+str_dict={i:len(i) if len(i)>=7 else "this char contain less 7 char" for i in name.split() }
+print(str_dict)
+
