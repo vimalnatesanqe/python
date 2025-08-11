@@ -110,3 +110,14 @@ for i,j in dict.items():
     for k in j:
         print(f"hey {k} {j.get(k)}")
 
+#short hand if and comprehension
+
+list1=list(range(1,11))
+print('True' if 10 in list1 else 'false')
+a=10
+b=11
+print(a if a<b else b)
+print(list1)
+x=[i if i%2==0 else 'odd' for i in list1]
+print(x)
+
