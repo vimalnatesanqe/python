@@ -99,3 +99,4 @@ print(f"your sum value is {sum} and your average is{avg//1}")
 
 
 
+
