@@ -106,6 +106,9 @@ def indir_recur1(num):
     return num
 x=indir_recur(1)
 print(x)
+
+#tail recurion there is no action after function call
+#non_tail recur after the function call additional opreations happen then it it non tail recursions
     
     
 
