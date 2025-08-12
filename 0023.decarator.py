@@ -41,7 +41,7 @@ def base_fun(a,b):
 
 base_fun(1000,2000)
 
-def fun1(a=0):
+def fun1(a):
     def fun2(b,c):
         print(a+b+c)
     return fun2
