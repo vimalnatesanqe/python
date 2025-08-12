@@ -1,51 +1,51 @@
-# # a function wiritten inside of another function called nested function
+# a function wiritten inside of another function called nested function
 
-# #Example1:
+#Example1:
 
-# def outerfun():
-#     print("this is outer function")
-#     def innerfun():
-#         print("this is inner function")
-#     innerfun()
-# outerfun()
-# #innerfun() -- we cannnot call inner function out side
+def outerfun():
+    print("this is outer function")
+    def innerfun():
+        print("this is inner function")
+    innerfun()
+outerfun()
+#innerfun() -- we cannnot call inner function out side
 
-# #Example2
-# def outerfun1(a,b):
-#     print(a+b)
-#     def innerfun1(a,b):
-#         print(a+b)
-#     in_fun=innerfun1
-#     in_fun(20,20)
-# out_fun=outerfun1
-# out_fun(10,10)
+#Example2
+def outerfun1(a,b):
+    print(a+b)
+    def innerfun1(a,b):
+        print(a+b)
+    in_fun=innerfun1
+    in_fun(20,20)
+out_fun=outerfun1
+out_fun(10,10)
 
-# #Example 3
-# #A function returning another function
-# #here we can aceess the inner function from outside 
+#Example 3
+#A function returning another function
+#here we can aceess the inner function from outside 
 
-# def out():
-#     print("this is outer")
-#     def inn():
-#         print("this is inner")
-#     return inn
-# ref=out()
-# ref()
+def out():
+    print("this is outer")
+    def inn():
+        print("this is inner")
+    return inn
+ref=out()
+ref()
 
-# #example 4
+#example 4
 
-# def fn1(abc):
-#     return abc
-# def fn2(a):
-#     print(a)
-# ref=fn1(fn2)
-# ref("vimal")
+def fn1(abc):
+    return abc
+def fn2(a):
+    print(a)
+ref=fn1(fn2)
+ref("vimal")
 
-# #a function calling by inself it is called recursion
-# # def fn1():
-# #     print("vimal")
-# #     fn1()
-# # fn1()
+#a function calling by inself it is called recursion
+# def fn1():
+#     print("vimal")
+#     fn1()
+# fn1()
 
 #decarotor
 
