@@ -16,7 +16,7 @@ print((lambda a,b:a+b)(100,200))
 
 #checking grater ot not
 print((lambda a,b: a if a>b else b)(10,2))
-#need to be discusss this topic
+
 
 ref=lambda:[i if i%2==0 else "odd_nbr" for i in range(1,100)]
 print(ref())
