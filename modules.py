@@ -1,6 +1,8 @@
 #collection of class,variable and functions called modules
 #every .py file as a module
-
+name='vimal'
+age=37
+location="coimbatore"
 pi=3.14
 
 #calculation basic example:
