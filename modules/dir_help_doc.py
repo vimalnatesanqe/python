@@ -2,7 +2,7 @@
 
 #using help function we can know about members detatils and description
 
-import modules
+import python.modules.modules as modules
 
 print(dir(modules))
 
